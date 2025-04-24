@@ -11,8 +11,20 @@ cv2.createTrackbar('min_val','diff',0,255,nothing)
 cv2.createTrackbar('max_val','diff',0,255,nothing)
 
 # creating video element
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('C:/Users/lohit/OneDrive/Desktop/Background-subtraction/Background-subtraction/cars.mp4')
+# cap = cv2.VideoCapture('C:/Users/lohit/OneDrive/Desktop/Background-subtraction/Background-subtraction/thunder.mp4')
+# cap = cv2.VideoCapture('C:/Users/lohit/OneDrive/Desktop/Background-subtraction/Background-subtraction/thunder2.mp4')
+
+# Check if video opened successfully
+if not cap.isOpened():
+    print("Error: Could not open video file")
+    exit()
+
 _,frame = cap.read()
+if frame is None:
+    print("Error: Could not read the first frame")
+    exit()
+
 # converting the image into grayscale image
 image1 = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 

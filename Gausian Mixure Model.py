@@ -7,7 +7,9 @@ def norm_pdf(x,mean,sigma):
 
 # 3'rd gaussian is most probable and 1'st gaussian is least probable
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('cars.mp4')
+# cap = cv2.VideoCapture('thunder.mp4')
+# cap = cv2.VideoCapture('thunder2.mp4')
 _,frame = cap.read()
 frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 

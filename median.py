@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # creating video element
-cap = cv2.VideoCapture('cars.mp4')
+cap = cv2.VideoCapture('C:/Users/lohit/OneDrive/Desktop/Background-subtraction/Background-subtraction/cars.mp4')
 
 # images from which Background to be estimated
 images = []
