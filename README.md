@@ -6,7 +6,6 @@ To implement different background-subtraction method's and also to implement the
 ## OVERVIEW
 Background subtraction is a major preprocessing steps in many vision based applications. For example, consider the cases like visitor counter where a static camera takes the number of visitors entering or leaving the room, or a traffic camera extracting information about the vehicles etc.
 
-![capture (1)](https://user-images.githubusercontent.com/50518930/61316081-0d907180-a7b5-11e9-9b0a-3e1f7508a348.png)
 
 ## Background Subtraction Methods:
 During this project we perform different methods for subtracting background and foreground form the frame of video 
@@ -17,8 +16,6 @@ This method is through the difference between two consecutive images to determin
 ### 2) Mean Filter:
 In this method background is estimated by taking mean of the previous N frames. Once background is estimated, foreground is estimated by the difference of background and current frame.
 
-![download (1)](https://user-images.githubusercontent.com/50518930/61317408-c3f55600-a7b7-11e9-9032-6e784cded33d.jpg)
-![1111111111111](https://user-images.githubusercontent.com/50518930/61319680-8f37cd80-a7bc-11e9-922f-8649605683d4.jpg)
 
 
 ### 3) Median Filter:
